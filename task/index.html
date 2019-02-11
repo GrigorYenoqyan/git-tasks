@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Git Tasks</title>
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+        <link
+                rel="stylesheet"
+                type="text/css"
+                href="https://cdnjs.cloudflare.com/ajax/libs/gitgraph.js/1.15.1/gitgraph.min.css"
+        />
+        <link rel="stylesheet" type="text/css" href="./buttons.css" />
+        <link rel="stylesheet" type="text/css" href="./styles.css" />
+    </head>
+
+    <body class="bg-1">
+        <div class="container">
+            <header>
+                <h1>Git Tasks</h1>
+                <p>Click on "Flow" buttons to see the Git commits diagram and try to replicate the exact graph with
+                   git commands (try to use as less as possible).</p>
+            </header>
+
+            <main>
+                <div class="controls">
+                    <button
+                            class="button button--antiman button--round-l button--text-medium"
+                            onclick="flow1()"
+                            type="button"
+                    >
+                        Flow 1
+                    </button>
+                    <button
+                            class="button button--antiman button--round-l button--text-medium" onclick="flow2()"
+                            type="button"
+                    >
+                        Flow 2
+                    </button>
+                    <button
+                            class="button button--antiman button--round-l button--text-medium" onclick="flow3()"
+                            type="button"
+                    >
+                        Flow 3
+                    </button>
+                </div>
+
+                <div class="task">
+                    <p id="taskDescription"></p>
+                    <canvas id="gitGraph"></canvas>
+                </div>
+            </main>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gitgraph.js/1.15.1/gitgraph.min.js"></script>
+        <script src="git.js"></script>
+    </body>
+
+</html>

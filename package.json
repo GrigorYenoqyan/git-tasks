@@ -1,0 +1,19 @@
+{
+  "name": "git-tasks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serve task"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gitgraph.js": "^1.15.1"
+  },
+  "devDependencies": {
+    "serve": "^10.1.2"
+  }
+}
